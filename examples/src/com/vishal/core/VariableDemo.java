@@ -13,8 +13,8 @@ public class VariableDemo {
 		
 		var2 = var1/2;
 		
-		System.out.println("The value of Var1/2 = ");
-		System.out.print(var2);
+		System.out.print("The value of Var1/2 = ");
+		System.out.println(var2);
 	}
 	
 }
