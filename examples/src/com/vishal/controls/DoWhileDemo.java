@@ -9,14 +9,14 @@ public class DoWhileDemo {
 		
 		//Below is DO WHILE loop
 		do {
-			
+			ch = (char) System.in.read();
 			System.out.print("Press any key and hit ENTER! : ");
 			
-			ch = (char) System.in.read();
 			
-			//System.out.println("The value entered is : " + ch + ". Enter q to quit");
 			
-		}while(ch != 'q');  /// notice the semicolon here
+			System.out.println("The value entered is : " + ch);
+			
+		}while (ch != 'q');  /// notice the semicolon here
 		
 		System.out.println("thank you");
 	}
