@@ -22,7 +22,11 @@ public class MultiCatchDemo {
 			{
 				System.out.println("Caught multi catch exception : " + e.getMessage());
 			}
+			
+			System.out.println("CAfter the try catch block ");
 		}
+		
+		System.out.println("CAt the end ");
 	}
 
 }
