@@ -5,7 +5,7 @@ public class StringOperations {
 	
 	public static void main(String[] args)
 	{
-		String str1 = "Java is number 1 for web developement";
+		final String str1 = "Java is number 1 for web developement";
 		String str2 = str1;
 		String str3 = "Java is powerful in String";
 		

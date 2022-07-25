@@ -13,10 +13,10 @@ public class VectorDemo {
 		
 		items.add("first");
 		items.add("Second");
-		items.add("Third");
+		//items.add("Third");
 		
 		System.out.println("Vector Capacity : " + items.capacity());
-		System.out.println("Vector Capacity : " + items.size());
+		System.out.println("Vector size : " + items.size());
 		
 		System.out.println("------------------");
 		

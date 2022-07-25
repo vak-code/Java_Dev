@@ -9,21 +9,25 @@ public class HashMapDemo {
 	public static void main(String[] args)
 	{
 		Map<String, String> hp = new HashMap<>();
+		String j = "Java";
 		
-		if(hp.containsKey("Java"))
+		if(hp.containsKey(j))
 			System.out.println("Java already present");
 		else
 		{
-			hp.put("Java","Java is Compiled, OA and PI language");
+			hp.put(j,"Java is Compiled, OA and PI language");
 			System.out.println("Added Java key");
 		}
+		
+		j = "jdk";
+		
 		hp.put("Python", "Python is OA, Interpreted and typed language");
 		hp.put("algol", null);
 		
 		System.out.println(hp.put("BASIC", "Beginners All Purpose Symbolic Instruction Code"));
 		System.out.println(hp.put("lisp", "Therein lies the madness"));
 		
-		if(hp.containsKey("Java"))
+		if(hp.containsKey(j))
 		{
 			System.out.println("Java already present");
 			System.out.println(hp.get("Java"));
