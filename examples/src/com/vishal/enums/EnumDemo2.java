@@ -25,5 +25,7 @@ public class EnumDemo2 {
 		
 		System.out.println("Value of tp is : " + tp);
 	}
+	
+
 
 }
