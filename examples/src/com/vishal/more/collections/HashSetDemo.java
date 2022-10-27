@@ -33,7 +33,7 @@ public class HashSetDemo {
 		
 		System.out.println("\n");
 		//iterating using Lambda function call on forEach method
-		System.out.println("terating using Lambda function call on forEach method");
+		System.out.println("iterating using Lambda function call on forEach method");
 		langs.forEach((e) -> {
 			System.out.print(e + ",");
 		});

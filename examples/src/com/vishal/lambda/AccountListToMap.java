@@ -14,7 +14,8 @@ public class AccountListToMap {
 		List<Account> acctList = new ArrayList<Account>();
 		acctList.add(new Account(101,"SBA"));
 		acctList.add(new Account(102, "LAA"));
-		System.out.println("Acct List = ");  acctList.stream().forEach(System.out::println);
+		System.out.println("Acct List = ");  
+		acctList.stream().forEach(System.out::println);
 		
 		Map<Integer, String> acctMap = acctList
 				.stream().collect(Collectors.toMap(Account::getAcctID, Account::getAcctType));
