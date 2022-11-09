@@ -35,7 +35,7 @@ public class AllCollections {
 		map.put(2, "B");
 		
 		System.out.println("Printing all");
-		System.out.println("list = " + list);
+		System.out.println("list = " + list.get(0));
 		System.out.println("Set = " + set);
 		System.out.println("Map = " + map);
 		

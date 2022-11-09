@@ -21,6 +21,7 @@ public class CustomObjEqqualsTest {
 			return true;
 		if (obj == null)
 			return false;
+		System.out.println(obj.getClass());
 		if (getClass() != obj.getClass())
 			return false;
 		CustomObjEqqualsTest other = (CustomObjEqqualsTest) obj;
@@ -46,7 +47,7 @@ public class CustomObjEqqualsTest {
 		t4.setName("Raj");
 
 		System.out.println(t1.equals(t2));
-		System.out.println(t3.equals(t4));
+		System.out.println(t3.equals(new Object()));
 
 	}
 }

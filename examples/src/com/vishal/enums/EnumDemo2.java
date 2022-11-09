@@ -17,13 +17,18 @@ public class EnumDemo2 {
 		Transports[] t = Transports.values();
 		
 		for(Transports i : t)
-			System.out.println(i);
+			System.out.println(i.toString());
 		
 			System.out.println(Transports.values());
 		
-		tp = Transports.valueOf("AIRPLANE");
+			System.out.println("Value of tp.AIRPLANE is : " + Transports.AIRPLANE);
+			//System.out.println("Value of tp.AIRPLANE is : " + tp());
+			
+	//	String tp = Transports.valueOf("AIRPLANE");
 		
-		System.out.println("Value of tp is : " + tp);
+		
+	//	System.out.println("Value of tp is : " + tp);
+
 	}
 	
 

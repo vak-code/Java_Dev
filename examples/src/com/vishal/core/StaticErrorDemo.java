@@ -7,6 +7,6 @@ public class StaticErrorDemo {
 	
 	static int valDenom()
 	{
-		return val / denom; //this n't work as can't access static variable from static method
+		return val / denom; //this n't work as can't access non-static variable from static method
 	}
 }

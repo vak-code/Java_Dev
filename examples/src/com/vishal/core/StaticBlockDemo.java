@@ -6,7 +6,7 @@ class StaticClass
 {
 	static double sqrtOf2, sqrtOf3;
 	
-	static
+	static 
 	{
 		System.out.println("This is from static block");
 		

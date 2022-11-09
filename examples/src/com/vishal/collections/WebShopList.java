@@ -13,7 +13,7 @@ public class WebShopList {
 		products.add(new Product("iPhone",999.99,"iphone is costly"));
 		products.add(new Product("AirPods",199.99,"AirPods are cool;"));
 		products.add(new Product("Apple Watch",299.99,"Apple Watch looks Awesome"));
-		
+		//products.get(3);
 		System.out.println("ArrayList size : " + products.size());
 		
 		for(Product p : products)

@@ -35,7 +35,7 @@ public class RelOpsDemo {
 		if(a & b)
 			System.out.println("This won't be execute");
 		
-		if(!(a & b))
+		if(!(a && b))
 			System.out.println("This will be executed !( a & b)");
 		
 		if(a | b)
