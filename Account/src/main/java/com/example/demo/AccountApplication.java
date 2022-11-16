@@ -10,9 +10,10 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class AccountApplication {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext run = SpringApplication.run(AccountApplication.class, args);
+		//ConfigurableApplicationContext run = SpringApplication.run(AccountApplication.class, args);
 		
-		String[] beanDefinitionNames = run.getBeanDefinitionNames();
+		 ConfigurableApplicationContext beanContext = SpringApplication.run(AccountApplication.class, args);
+		String[] beanDefinitionNames = beanContext.getBeanDefinitionNames();
 		
 		Arrays.sort(beanDefinitionNames);
 		for(String i : beanDefinitionNames)
