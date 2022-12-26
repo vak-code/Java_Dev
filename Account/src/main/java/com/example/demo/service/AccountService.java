@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -40,6 +41,11 @@ public class AccountService {
 				));
 	}
 	
+	@PreDestroy
+	public void beforeBeanDestroy()
+	{
+		System.out.println("Bean is getting destroyed");
+	}
 	
 	public Account getAcct() {
 		//return getMsg;

@@ -1,0 +1,6 @@
+Spring:
+  Kafka:
+    producer:
+      bootstrap-servers: localhost:2181
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serlization.StringSerializer

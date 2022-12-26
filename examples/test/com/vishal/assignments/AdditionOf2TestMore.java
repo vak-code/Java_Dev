@@ -47,7 +47,7 @@ public class AdditionOf2TestMore {
 	@Test(expected=Exception.class)
 	public void testNull()
 	{
-		int first=6;
+		int first=5;
 		assertEquals(11, addObject.sum(first, 5));
 	}
 	

@@ -19,6 +19,7 @@ public class AccountListToMap {
 		
 		Map<Integer, String> acctMap = acctList
 				.stream().collect(Collectors.toMap(Account::getAcctID, Account::getAcctType));
+		System.out.println(acctList);
 		System.out.println(acctMap);
 		
 	}

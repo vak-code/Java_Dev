@@ -1,6 +1,10 @@
 package com.example.demo.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,11 +25,19 @@ public class BlogController {
 	@Autowired
 	BlogService blogServ;
 	
+//	@GetMapping("blog")
+//	public Blog getBlog()
+//	{
+//		log.info("CUSTOM INFO get called");
+//		return blogServ.getBlogService();
+//	}
+	
+	
 	@GetMapping("blog")
-	public Blog getBlog()
+	public ResponseEntity<List<Blog>> getBlog()
 	{
-		log.info("CUSTOM INFO get called");
-		return blogServ.getBlogService();
+		log.info("Inside the GET BLOG");
+		return new ResponseEntity<List<Blog>>(blogServ.getBlogService(),HttpStatus.OK);
 	}
 	
 	@PostMapping("blog")

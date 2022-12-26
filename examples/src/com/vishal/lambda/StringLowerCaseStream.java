@@ -24,5 +24,7 @@ public class StringLowerCaseStream {
 		System.out.println("To lower, reversed sorted but only with 'a' leter");
 		langs.stream().filter(n -> n.contains("a")).map(String::toLowerCase).sorted(Comparator.reverseOrder())
 				.forEach(System.out::println);
+		System.out.println();
+		langs.stream().map(n->n.toUpperCase()).filter(n->n.contains("A")).sorted().forEach(System.out::println);
 	}
 }

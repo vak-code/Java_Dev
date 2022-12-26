@@ -14,8 +14,10 @@ public class LambdaStringDemo {
 		System.out.println();
 		
 		System.out.println("Length of each is");
-		cities.stream().filter(n->n.contains("i")).map(n->n.length()).forEach(System.out::println);
+		cities.stream().filter(n->n.contains("i")).map( n->(n+" "+n.length())).forEach(System.out::println);
 		System.out.println();
+		
+		cities.stream().map(n->(n+" "+n.length())).forEach(System.out::println);
 		
 //		System.out.println("All cities name length--->");
 //		cities.stream().mapToInt(String::length).forEach(System.out::println);
